@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <button onclick="loadHome()">Home</button>
+      <button onclick="showContent('html')">HTML</button>
+      <button onclick="showContent('css')">CSS</button>
+      <button onclick="showContent('js')">JavaScript</button>
+      <button onclick="showContent('ajax')">AJAX</button>
+      <button onclick="showContent('xml')">XML</button>
+    </nav>
+
+    <main class="content">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search content..." />
+        <button onclick="searchContent()">Search</button>
+      </div>
+      <div id="content">
+        <h1>Welcome to Web Tutorial</h1>
+        <p>Select a topic from the sidebar to get started. Final Project Group 03</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

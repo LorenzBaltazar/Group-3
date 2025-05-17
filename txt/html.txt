@@ -1,0 +1,166 @@
+<h2>Web Page Skeleton of an HTML</h2> <br><br>
+
+&lt;!DOCTYPE html&gt; declaration indicates that this document is an HTML document<br><br>
+
+&lt;html&gt; and &lt;/html&gt; tags follows the principle of Last-In-First-Out (LIFO) which means the latest tag you have opened should also be the first tag you need to close. Inside the opening of &lt;html&gt; tag, we set the language (lang) attribute to English (en)<br><br>
+
+&lt;head&gt; tag contain some information about the HTML document.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&gt; tag defines information about the document, the attribute charset is set to UTF-8 means character encoding for Unicode.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta&gt; tag two attribute set<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name - set the name of the information to be changed, viewport is the information that will be changed in the second meta<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content - content viewport<br><br>
+
+&lt;title&gt;&lt;/title&gt; tag defines the title of the document which is shown in the browser page tab<br><br>
+
+&lt;body&gt;&lt;/body&gt; tag represents the document’s body where the user sees information<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Display text&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;This is my first text.&lt;/h1&gt;
+&lt;/body&gt;
+</pre><br><br>
+
+<b>Heading Tags</b> - used to create headers or sub header for a web page consisting of 6 heading elements- h1, h2, h3, h4, h5, & h6.<br>
+Where &lt;h1&gt;&lt;/h1&gt; is the most important and &lt;h6&gt;&lt;/h6&gt; is the least.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Main Heading&lt;/h1&gt;
+    &lt;h2&gt;Subheading&lt;/h2&gt;
+    &lt;h3&gt;Smaller Subheading&lt;/h3&gt;
+    &lt;h4&gt;Sub-Subheading&lt;/h4&gt;
+    &lt;h5&gt;Minor Subheading&lt;/h5&gt;
+    &lt;h6&gt;Smallest Heading&lt;/h6&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br><br>
+
+<b>Paragraph Tags</b><br>
+&lt;p&gt;&lt;/p&gt; tag is used to define a paragraph which makes it more readable and manageable by dividing its content.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Paragraph Tag&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;The strawberries look delicious.&lt;/p&gt;
+    &lt;p&gt;But it is expensive when it is not in season.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br><br>
+
+<b>Break Tag</b><br>
+&lt;br&gt; tag is used to create a line break in the text.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;p&gt;
+        Hello, welcome to our web page&lt;br&gt;
+        We hope you enjoy browsing.&lt;br&gt;
+        Feel free to reach out with any questions.&lt;br&gt;
+        Have a great day!
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br><br>
+
+<b>Image Tag</b><br>
+&lt;img&gt; tag is used to insert an image in web pages.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;img src="C:\Users\JEDMARIE\Pictures\Ice Cream.jpg" alt="Ice Cream Pic" width="200px" height="200px"&gt;
+</pre><br><br>
+
+<b>Comment Tag</b><br>
+Used to put comment inside the HTML page without being displayed.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!-- This is a comment and will not be displayed on the webpage --&gt;
+&lt;p&gt;This is visible text.&lt;/p&gt;
+</pre><br><br>
+
+<b>Unordered List</b><br>
+Used when the sequence is not important.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;Fruits&lt;/h1&gt;
+  &lt;ul type="circle"&gt;
+    &lt;li&gt;Apples&lt;/li&gt;
+    &lt;li&gt;Bananas&lt;/li&gt;
+    &lt;li&gt;Oranges&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br><br>
+
+<b>Ordered List</b><br>
+Uses number or letters to display the sequence.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;To-Do&lt;/h1&gt;
+  &lt;ol type="i"&gt;
+    &lt;li&gt;General Cleaning&lt;/li&gt;
+    &lt;li&gt;Complete homeworks&lt;/li&gt;
+    &lt;li&gt;Buy Groceries&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br><br>
+
+<b>Table Tags</b><br>
+Defines tables using &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, etc.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Firstname&lt;/th&gt;
+      &lt;th&gt;Lastname&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Michael&lt;/td&gt;
+      &lt;td&gt;Garcia&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Jedmarie&lt;/td&gt;
+      &lt;td&gt;Delda&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Wilson&lt;/td&gt;
+      &lt;td&gt;Dela Cruz&lt;/td&gt;
+      &lt;td&gt;26&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre><br><br>
+
+<b>Hyperlinks</b><br>
+&lt;a&gt;&lt;/a&gt; tag used to create hyperlinks using href.<br>
+<b>Sample code:</b><br>
+<pre>
+&lt;a href="https://www.youtube.com/"&gt;Redirect to YouTube&lt;/a&gt;
+</pre>

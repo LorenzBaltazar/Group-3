@@ -1,0 +1,61 @@
+
+<h2>AJAX (Asynchronous JavaScript and XML)</h2><br><br>
+AJAX is a technique for creating fast and dynamic web pages. It allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes.<br><br>
+
+<b>Why use AJAX?</b><br>
+- Updates web content without reloading the page<br>
+- Increases speed and responsiveness<br>
+- Can send and receive data in many formats (JSON, XML, HTML, etc.)<br><br>
+
+<b>Key Concepts:</b><br>
+- Uses JavaScript to send/receive data asynchronously<br>
+- Often used with XML, JSON, or plain text responses<br>
+- Employs the XMLHttpRequest object or Fetch API<br><br>
+
+<b>Basic AJAX using XMLHttpRequest:</b><br>
+<pre>
+function loadContent() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById('content').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.open('GET', 'sample.txt', true);
+    xhr.send();
+}
+
+// Example usage in HTML:
+// &lt;button onclick="loadContent()"&gt;Load Content&lt;/button&gt;
+</pre><br><br>
+
+<b>Explanation:</b><br>
+- <code>XMLHttpRequest()</code>: Creates an AJAX request object<br>
+- <code>xhr.onreadystatechange</code>: Event triggered on state change<br>
+- <code>xhr.readyState</code>: 4 means request is finished and response is ready<br>
+- <code>xhr.status</code>: 200 means OK<br>
+- <code>xhr.open(method, URL, async)</code>: Prepares the request<br>
+- <code>xhr.send()</code>: Sends the request<br><br>
+
+<b>Modern AJAX using Fetch API:</b><br>
+<pre>
+fetch('sample.txt')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('content').innerHTML = data;
+  })
+  .catch(error => {
+      console.error('Error fetching data:', error);
+  });
+</pre><br><br>
+
+<b>Advantages of Fetch:</b><br>
+- Simpler and cleaner syntax<br>
+- Uses Promises<br>
+- More powerful and flexible than XMLHttpRequest<br><br>
+
+<b>AJAX Use Cases:</b><br>
+- Form submission without page reload<br>
+- Real-time data display (e.g. chat apps)<br>
+- Infinite scrolling or pagination<br>
+- Dynamic content loading<br>
