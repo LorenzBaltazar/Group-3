@@ -1,0 +1,176 @@
+<h2>CSS (Cascading Style Sheets)</h2><br><br>
+CSS stands for Cascading Style Sheets. CSS explains how HTML elements should appear on screens, in print, or in other media. CSS saves a lot of work. It can manage the design of several web pages simultaneously. External stylesheets are kept in CSS files.<br><br>
+
+<b>Why Use CSS?</b><br>
+CSS is used to apply styles to web pages in terms of design, layout and differences in display for various devices and screen sizes.<br><br>
+
+<b>CSS Syntax</b><br>
+A selector and a declaration block make up a CSS rule.<br>
+Sample code:
+<pre>
+h1 {
+  color: blue;
+  font-size: 12px;
+}
+</pre><br>
+
+<b>CSS Selectors</b><br>
+Select components using simple selectors (based on name, id, and class).<br><br>
+
+<b>Element Selector</b><br>
+The element selector uses the element name to choose HTML elements. All &lt;p&gt; elements on the page will be center-aligned, with a red text color.<br>
+Sample code:
+<pre>
+p {
+  text-align: center;
+  color: red;
+}
+</pre><br>
+
+<b>ID Selector</b><br>
+The id selector chooses a particular HTML element by using the id attribute.<br>
+Sample code:
+<pre>
+#para1 {
+  text-align: center;
+  color: red;
+}
+</pre><br>
+
+<b>Class Selector</b><br>
+HTML components having a specific class attribute are chosen using the class selector.<br>
+Sample code:
+<pre>
+.center {
+  text-align: center;
+  color: red;
+}
+</pre><br>
+
+<b>Universal Selector</b><br>
+All HTML elements on the page can be selected using the universal selector (*).<br>
+Sample code:
+<pre>
+* {
+  margin: 0;
+  padding: 0;
+}
+</pre><br>
+
+<b>Grouping Selector</b><br>
+All HTML elements that have the same style specifications are chosen by the grouping selector.<br>
+Sample code:
+<pre>
+h1, h2, p {
+  color: green;
+  text-align: center;
+}
+</pre><br>
+
+<b>Adding CSS</b><br>
+There are three CSS Insertion Methods: External CSS, Internal CSS, Inline CSS.<br><br>
+
+<b>External CSS</b><br>
+Each HTML page must provide a link to the external style sheet file in the head section.<br>
+Sample code:
+<pre>
+&lt;link rel="stylesheet" href="style.css"&gt;
+</pre><br>
+
+<b>Internal CSS</b><br>
+The internal style is specified in the head section's &lt;style&gt; element.<br>
+Sample code:
+<pre>
+&lt;style&gt;
+  body {
+    background-color: lightblue;
+  }
+&lt;/style&gt;
+</pre><br>
+
+<b>Inline CSS</b><br>
+Use an inline style for just one element using the style attribute.<br>
+Sample code:
+<pre>
+&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;
+</pre><br>
+
+<b>CSS Comments</b><br>
+Comments can be used for code explanations.<br>
+Sample code:
+<pre>
+/* This is a comment */
+</pre><br>
+
+<b>Colors</b><br>
+Predefined color names or RGB, HEX, HSL, RGBA values are used to specify colors.<br><br>
+
+<b>Backgrounds</b><br>
+Set the background color and image.<br>
+Sample code:
+<pre>
+body {
+  background-color: lightblue;
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</pre><br>
+
+<b>Box Model</b><br><br>
+
+<b>Border Style</b><br>
+You can define the style, width, and color of an element's border.<br>
+Sample code:
+<pre>
+p {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+</pre><br>
+
+<b>Margin</b><br>
+Margins can be used to create space around objects.<br>
+Sample code:
+<pre>
+div {
+  margin: 20px;
+}
+</pre><br>
+
+<b>Padding</b><br>
+Padding creates space inside an element between the content and the border.<br>
+Sample code:
+<pre>
+div {
+  padding: 15px;
+}
+</pre><br>
+
+<b>Text Alignment</b><br>
+The text-align property is used to change the horizontal alignment of a text.<br>
+Sample code:
+<pre>
+p {
+  text-align: center;
+}
+</pre><br>
+
+<b>Fonts</b><br>
+The font-family property is used to specify the font of a text.<br>
+Sample code:
+<pre>
+p {
+  font-family: "Arial", sans-serif;
+}
+</pre><br>
+
+<b>Font Size</b><br>
+The font-size property in CSS defines the text’s size.<br>
+Sample code:
+<pre>
+p {
+  font-size: 16px;
+}
+</pre><br>

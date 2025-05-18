@@ -31,7 +31,7 @@ function showContent(topic) {
         });
     }
 
-function searchContent() {
+  function searchContent() {
   const query = document.getElementById('searchInput').value.toLowerCase();
   let found = false;
 
